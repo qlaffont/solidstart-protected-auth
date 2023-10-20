@@ -4,6 +4,7 @@ import {
   Accessor,
   createContext,
   createEffect,
+  createMemo,
   createSignal,
   JSX,
   mergeProps,
@@ -11,7 +12,7 @@ import {
   useContext,
 } from 'solid-js';
 import { isServer } from 'solid-js/web';
-import { Meta, redirect, useLocation } from 'solid-start';
+import { Meta, useLocation, useNavigate, useSearchParams } from 'solid-start';
 
 import { currentURLIsAllowed } from './currentURLIsAllowed';
 
@@ -87,6 +88,14 @@ const useAccessTokenStorage = () =>
     name: keyAccessToken,
   });
 
+const useFullPathName = () => {
+  const location = useLocation();
+
+  return createMemo(() => {
+    return `${location.pathname}${location.search}`;
+  });
+};
+
 export const SolidStartAuthProtectedLogin =
   ({
     callback,
@@ -97,19 +106,18 @@ export const SolidStartAuthProtectedLogin =
   }) =>
   () => {
     const [, setRedirectURL] = useRedirectURLStorage();
-    const location = useLocation();
+    const navigate = useNavigate();
+    const [searchParams] = useSearchParams();
 
-    if (isServer) {
-      const currentUrl = new URL(location.toString());
-
+    if (!isServer) {
       (async () => {
-        if (getAccessToken() !== null && getAccessToken() !== undefined) {
-          redirect(authCallbackURL);
-          return;
+        if (searchParams.redirectURL) {
+          setRedirectURL(searchParams.redirectURL as string);
         }
 
-        if (currentUrl.searchParams.get('redirectURL')) {
-          setRedirectURL(currentUrl.searchParams.get('redirectURL') as string);
+        if (getAccessToken() !== null && getAccessToken() !== undefined) {
+          navigate(authCallbackURL);
+          return;
         }
 
         callback && (await callback());
@@ -131,7 +139,7 @@ export const SolidStartAuthProtectedLogout =
     const [, setRedirectURL] = useRedirectURLStorage();
     const [, setAccessToken] = useAccessTokenStorage();
 
-    if (isServer) {
+    if (!isServer) {
       (async () => {
         preCallback && (await preCallback());
 
@@ -157,20 +165,19 @@ export const SolidStartAuthProtectedCallback =
   }) =>
   () => {
     const [redirectURL, setRedirectURL] = useRedirectURLStorage();
+    const [searchParams] = useSearchParams();
 
-    if (isServer) {
-      //Can't use router it seems he don't have enough time to parse query here
-      const currentUrl = new URL(window.location.toString());
-      if (currentUrl.searchParams.get('accessToken')) {
+    if (!isServer) {
+      if (searchParams.accessToken) {
         (async () => {
           await getAndSaveAccessToken({
-            accessToken: currentUrl.searchParams.get('accessToken') as string,
+            accessToken: searchParams.accessToken as string,
           });
-
-          setRedirectURL(undefined);
 
           //@ts-ignore
           callback && (await callback(redirectURL() ?? undefined));
+
+          setRedirectURL(undefined);
         })();
       } else {
         (async () => {
@@ -226,24 +233,27 @@ export const useSolidStartAuthProtectedHandler = (props: {
 }) => {
   props = mergeProps({ publicURLs: [], allowNotFound: false }, props);
 
-  const { setIsConnected } = useSolidStartAuthProtected();
+  const auth = useSolidStartAuthProtected();
   const [accessToken, setAccessToken] = useAccessTokenStorage();
   const location = useLocation();
+  const navigate = useNavigate();
+  const fullPathName = useFullPathName();
 
   createEffect(() => {
-    if (isServer && setIsConnected) {
+    if (!isServer && !!auth.setIsConnected) {
       (async () => {
-        let userIsConnected = !!accessToken;
+        let userIsConnected = !!accessToken();
 
+        // Verify token if user is connected to check validity
         if (userIsConnected && props.verifyTokenFct) {
           //@ts-ignore
           if (!(await props.verifyTokenFct(accessToken()))) {
             setAccessToken(undefined);
-            setIsConnected(false);
+            auth.setIsConnected(false);
 
-            return redirect(
+            return navigate(
               `${props.loginURL}?redirectURL=${encodeURIComponent(
-                location.toString()
+                fullPathName()
               )}`
             );
           } else {
@@ -251,6 +261,7 @@ export const useSolidStartAuthProtectedHandler = (props: {
           }
         }
 
+        // If user is not connected try to renew it
         if (
           location.pathname !== props.loginURL &&
           (props.authCallbackURL
@@ -270,7 +281,7 @@ export const useSolidStartAuthProtectedHandler = (props: {
         //Check if user can access page
         if (
           !userIsConnected &&
-          !currentURLIsAllowed(location.toString(), [
+          !currentURLIsAllowed(location.pathname, [
             ...(props.publicURLs as string[]),
             props.loginURL,
             ...(props.authCallbackURL ? [props.authCallbackURL] : []),
@@ -279,17 +290,18 @@ export const useSolidStartAuthProtectedHandler = (props: {
             ? ['/_error', '/404'].indexOf(location.pathname) !== -1
             : false)
         ) {
+          console.log(props.loginURL, fullPathName());
           //Redirect to login
           setAccessToken(undefined);
-          setIsConnected(false);
-          return redirect(
+          auth.setIsConnected(false);
+          return navigate(
             `${props.loginURL}?redirectURL=${encodeURIComponent(
-              location.toString()
+              fullPathName()
             )}`
           );
         }
 
-        setIsConnected(userIsConnected);
+        auth.setIsConnected(userIsConnected);
         return;
       })();
     }
