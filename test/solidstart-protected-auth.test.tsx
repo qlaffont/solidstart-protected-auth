@@ -9,12 +9,7 @@ import {
   it,
   jest,
 } from '@jest/globals';
-import {
-  cleanup,
-  render,
-  renderHook,
-  waitFor,
-} from '@solidjs/testing-library';
+import { cleanup, render, renderHook, waitFor } from '@solidjs/testing-library';
 
 import {
   getAccessToken,
