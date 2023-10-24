@@ -21,58 +21,6 @@ type AsyncVoidFunction = () => Promise<void>;
 const keyAccessToken = 'accessToken';
 const keyRedirectUrl = 'redirectURL';
 
-export const getAccessToken = () => {
-  if (typeof localStorage === 'undefined') {
-    return undefined;
-  }
-
-  const value = localStorage.getItem(keyAccessToken);
-
-  return value === 'undefined' || !value ? undefined : JSON.parse(value);
-};
-
-export const setAccessToken = (accessToken: string) => {
-  if (typeof localStorage === 'undefined') {
-    return;
-  }
-
-  localStorage.setItem(keyAccessToken, `"${accessToken}"`);
-};
-
-export const removeAccessToken = () => {
-  if (typeof localStorage === 'undefined') {
-    return;
-  }
-
-  localStorage.removeItem(keyAccessToken);
-  return;
-};
-
-export const getAndSaveAccessToken = async ({
-  renewTokenFct,
-  accessToken,
-}: {
-  renewTokenFct?: (oldAccessToken?: string) => string | Promise<string>;
-  accessToken?: string;
-}) => {
-  if (!accessToken && renewTokenFct) {
-    try {
-      const accessToken = await renewTokenFct(getAccessToken() ?? undefined);
-      setAccessToken(accessToken);
-      return true;
-    } catch (error) {
-      //Impossible to fetch new token redirect to logout
-      throw new Error('need to redirect to logout');
-    }
-  } else if (accessToken) {
-    setAccessToken(accessToken);
-    return true;
-  }
-
-  return false;
-};
-
-//TODO to check if it's working
 // LOCAL STORAGE FOR REDIRECT URL AND ACCESS TOKEN
 const useRedirectURLStorage = () =>
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -94,6 +42,50 @@ const useFullPathName = () => {
   return createMemo(() => {
     return `${location.pathname}${location.search}`;
   });
+};
+
+export const getAccessToken = () => {
+  const [accessToken] = useAccessTokenStorage();
+
+  return accessToken();
+};
+
+export const setAccessToken = (accessToken: string) => {
+  const [, setAccessToken] = useAccessTokenStorage();
+
+  setAccessToken(accessToken);
+};
+
+export const removeAccessToken = () => {
+  const [, setAccessToken] = useAccessTokenStorage();
+
+  setAccessToken(undefined);
+};
+
+export const getAndSaveAccessToken = async ({
+  renewTokenFct,
+  accessToken,
+}: {
+  renewTokenFct?: (oldAccessToken?: string) => string | Promise<string>;
+  accessToken?: string;
+}) => {
+  if (!accessToken && renewTokenFct) {
+    try {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      //@ts-ignore
+      const accessToken = await renewTokenFct(getAccessToken() ?? undefined);
+      setAccessToken(accessToken);
+      return true;
+    } catch (error) {
+      //Impossible to fetch new token redirect to logout
+      throw new Error('need to redirect to logout');
+    }
+  } else if (accessToken) {
+    setAccessToken(accessToken);
+    return true;
+  }
+
+  return false;
 };
 
 export const SolidStartAuthProtectedLogin =
