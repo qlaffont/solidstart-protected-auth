@@ -64,7 +64,7 @@
     "regenerator-runtime": "0.13.11",
     "@babel/preset-env": "^7.23.2",
     "@babel/preset-typescript": "^7.23.2",
-    "@jest/globals": "29.6.4",
+    "@jest/globals": "29.7.0",
     "@size-limit/preset-small-lib": "8.2.6",
     "@solidjs/testing-library": "^0.8.4",
     "@testing-library/jest-dom": "6.1.2",
