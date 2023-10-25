@@ -1,15 +1,9 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import '@testing-library/jest-dom';
 
-import {
-  afterEach,
-  beforeEach,
-  describe,
-  expect,
-  it,
-  jest,
-} from '@jest/globals';
+// INFO / TODO : THIS TEST IS CURRENTLY DISABLED BECAUSE SOLID-START DON'T SUPPORT TEST AT THE MOMENT
+
 import { cleanup, render, renderHook, waitFor } from '@solidjs/testing-library';
+import { describe, expect, it } from 'vitest';
 
 import {
   getAccessToken,
