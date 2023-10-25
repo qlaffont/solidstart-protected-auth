@@ -50,6 +50,6 @@ jobs:
       - uses: paambaati/codeclimate-action@v5.0.0
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-          with:
+        with:
           coverageCommand: pnpm test
           debug: true
