@@ -56,7 +56,7 @@ jobs:
 
       - name: Test
         if: steps.changes.outputs.src == 'true'
-        run: pnpm test -- --ci --coverage --maxWorkers=2
+        run: pnpm test
 
       - name: Build
         if: steps.changes.outputs.src == 'true'
