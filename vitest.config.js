@@ -21,6 +21,7 @@ export default defineConfig({
           },
     coverage: {
       provider: 'istanbul', // or 'v8'
+      reporter: ['text', 'lcov', 'html'],
     },
   },
   resolve: {
