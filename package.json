@@ -75,7 +75,7 @@
     "solid-testing-library": "^0.5.1",
     "tsdx": "0.14.1",
     "tslib": "2.6.2",
-    "tsup": "^7.2.0",
+    "tsup": "^8.0.0",
     "typescript": "5.2.2",
     "vitest": "^0.34.6"
   },
