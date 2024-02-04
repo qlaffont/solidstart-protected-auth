@@ -68,7 +68,7 @@
     "husky": "9.0.10",
     "jsdom": "^24.0.0",
     "np": "9.2.0",
-    "prettier": "3.2.4",
+    "prettier": "3.2.5",
     "regenerator-runtime": "0.14.1",
     "size-limit": "11.0.2",
     "solid-js": "^1.8.3",
