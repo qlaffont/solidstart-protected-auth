@@ -10,7 +10,7 @@ dependencies:
     version: 2.1.1(solid-js@1.8.3)(solid-start@0.3.7)
   solid-start:
     specifier: ^0.3.7
-    version: 0.3.7(@solidjs/meta@0.28.7)(@solidjs/router@0.8.4)(solid-js@1.8.3)(vite@4.5.2)
+    version: 0.3.7(@solidjs/meta@0.28.7)(solid-js@1.8.3)(vite@4.5.2)
 
 devDependencies:
   '@babel/core':
@@ -27,7 +27,7 @@ devDependencies:
     version: 11.0.2(size-limit@11.0.2)
   '@solidjs/testing-library':
     specifier: ^0.8.4
-    version: 0.8.4(@solidjs/router@0.8.4)(solid-js@1.8.3)
+    version: 0.8.6(solid-js@1.8.3)
   '@typescript-eslint/eslint-plugin':
     specifier: 7.0.2
     version: 7.0.2(@typescript-eslint/parser@7.0.2)(eslint@8.57.0)(typescript@5.3.3)
@@ -3013,7 +3013,7 @@ packages:
     dependencies:
       '@solid-primitives/utils': 6.2.1(solid-js@1.8.3)
       solid-js: 1.8.3
-      solid-start: 0.3.7(@solidjs/meta@0.28.7)(@solidjs/router@0.8.4)(solid-js@1.8.3)(vite@4.5.2)
+      solid-start: 0.3.7(@solidjs/meta@0.28.7)(solid-js@1.8.3)(vite@4.5.2)
     dev: false
 
   /@solid-primitives/utils@6.2.1(solid-js@1.8.3):
@@ -3032,22 +3032,14 @@ packages:
       solid-js: 1.8.3
     dev: false
 
-  /@solidjs/router@0.8.4(solid-js@1.8.3):
-    resolution: {integrity: sha512-Gi/WVoVseGMKS1DBdT3pNAMgOzEOp6Q3dpgNd2mW9GUEnVocPmtyBjDvXwN6m7tjSGsqqfqJFXk7bm1hxabSRw==}
-    peerDependencies:
-      solid-js: ^1.5.3
-    dependencies:
-      solid-js: 1.8.3
-
-  /@solidjs/testing-library@0.8.4(@solidjs/router@0.8.4)(solid-js@1.8.3):
-    resolution: {integrity: sha512-HHCAlBd4P4TY03tXmoBwTO6FFM7w33LeT8Skab941eLO9l5RN7OxKEBw2fiMYvSFL2h2U7L4+W5N03iC8GbB6Q==}
+  /@solidjs/testing-library@0.8.6(solid-js@1.8.3):
+    resolution: {integrity: sha512-MnDGfUw38SjE+lmCDZ44HeZq5WbDU7s/BTa7uvqv55GKatddoWiJmHanUAbuEtmwMdEv+fFQQzftkqrFXEn1BQ==}
     engines: {node: '>= 14'}
     peerDependencies:
-      '@solidjs/router': '>=0.6.0'
+      '@solidjs/router': '>=0.9.0'
       solid-js: '>=1.0.0'
     dependencies:
-      '@solidjs/router': 0.8.4(solid-js@1.8.3)
-      '@testing-library/dom': 9.3.3
+      '@testing-library/dom': 9.3.4
       solid-js: 1.8.3
     dev: true
 
@@ -3079,22 +3071,26 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/dom@9.3.3:
-    resolution: {integrity: sha512-fB0R+fa3AUqbLHWyxXa2kGVtf1Fe1ZZFr0Zp6AIbIAzXb2mKbEXl+PCQNUOaq5lbTab5tfctfXRNsWXxa2f7Aw==}
+  /@testing-library/dom@9.3.4:
+    resolution: {integrity: sha512-FlS4ZWlp97iiNWig0Muq8p+3rVDjRiYE+YKGbAqXOu9nwJFFOdL00kFpz42M+4huzYi86vAK1sOOfyOG45muIQ==}
     engines: {node: '>=14'}
     dependencies:
       '@babel/code-frame': 7.23.5
-      '@babel/runtime': 7.17.2
-      '@types/aria-query': 5.0.3
+      '@babel/runtime': 7.23.9
+      '@types/aria-query': 5.0.4
       aria-query: 5.1.3
       chalk: 4.1.2
-      dom-accessibility-api: 0.5.13
+      dom-accessibility-api: 0.5.16
       lz-string: 1.5.0
       pretty-format: 27.5.1
     dev: true
 
   /@types/aria-query@5.0.3:
     resolution: {integrity: sha512-0Z6Tr7wjKJIk4OUEjVUQMtyunLDy339vcMaj38Kpj6jM2OE1p3S4kXExKZ7a3uXQAPCoy3sbrP1wibDKaf39oA==}
+    dev: true
+
+  /@types/aria-query@5.0.4:
+    resolution: {integrity: sha512-rfT93uj5s0PRL7EzccGMs3brplhcrghnDoV26NqKhCAS1hVo+WdNsPvE/yb6ilfr5hi2MEk6d5EWJTKdxg8jVw==}
     dev: true
 
   /@types/babel__core@7.20.3:
@@ -5079,6 +5075,10 @@ packages:
 
   /dom-accessibility-api@0.5.13:
     resolution: {integrity: sha512-R305kwb5CcMDIpSHUnLyIAp7SrSPBx6F0VfQFB3M75xVMHhXJJIdePYgbPPh1o57vCHNu5QztokWUPsLjWzFqw==}
+    dev: true
+
+  /dom-accessibility-api@0.5.16:
+    resolution: {integrity: sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg==}
     dev: true
 
   /domexception@1.0.1:
@@ -10524,7 +10524,7 @@ packages:
       solid-js: 1.8.3
     dev: false
 
-  /solid-start@0.3.7(@solidjs/meta@0.28.7)(@solidjs/router@0.8.4)(solid-js@1.8.3)(vite@4.5.2):
+  /solid-start@0.3.7(@solidjs/meta@0.28.7)(solid-js@1.8.3)(vite@4.5.2):
     resolution: {integrity: sha512-16L+yaLbxjcovYwBovcdv9wi0zD8/SsHL9XYusqoxri1Xg2xy+uUPBWdmhOAUq6+R7qjyHJPX53ILUVJTj1qng==}
     hasBin: true
     peerDependencies:
@@ -10565,7 +10565,6 @@ packages:
       '@babel/preset-typescript': 7.23.3(@babel/core@7.23.9)
       '@babel/template': 7.22.15
       '@solidjs/meta': 0.28.7(solid-js@1.8.3)
-      '@solidjs/router': 0.8.4(solid-js@1.8.3)
       '@types/cookie': 0.5.3
       '@types/debug': 4.1.10
       chokidar: 3.5.3
