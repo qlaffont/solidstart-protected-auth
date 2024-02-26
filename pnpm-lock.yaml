@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@solid-primitives/storage':
     specifier: ^2.1.1
-    version: 2.1.1(solid-js@1.8.15)(solid-start@0.3.7)
+    version: 2.1.2(solid-js@1.8.15)(solid-start@0.3.7)
   solid-start:
     specifier: ^0.3.7
     version: 0.3.7(@solidjs/meta@0.28.7)(solid-js@1.8.15)(vite@4.5.2)
@@ -2634,8 +2634,8 @@ packages:
       size-limit: 11.0.2
     dev: true
 
-  /@solid-primitives/storage@2.1.1(solid-js@1.8.15)(solid-start@0.3.7):
-    resolution: {integrity: sha512-GDbELt4Xjp0ySsHZ+RHzup0YIl1epHz8A2SVQYNRZPgkIEJk0Fyrt2vW6Etym2yUruTt8yT3d8106LVb71KIWg==}
+  /@solid-primitives/storage@2.1.2(solid-js@1.8.15)(solid-start@0.3.7):
+    resolution: {integrity: sha512-qgw89bnclvsOkA+Cm8VKSpuBjYZxd4BvEJNlztV+pyzdJaMv+/s18/apLgSfmS+cOkWP8Phuo4uCBNjFVFXPRg==}
     peerDependencies:
       solid-js: ^1.6.12
       solid-start: '>=0.2.26'
@@ -2643,13 +2643,13 @@ packages:
       solid-start:
         optional: true
     dependencies:
-      '@solid-primitives/utils': 6.2.1(solid-js@1.8.15)
+      '@solid-primitives/utils': 6.2.2(solid-js@1.8.15)
       solid-js: 1.8.15
       solid-start: 0.3.7(@solidjs/meta@0.28.7)(solid-js@1.8.15)(vite@4.5.2)
     dev: false
 
-  /@solid-primitives/utils@6.2.1(solid-js@1.8.15):
-    resolution: {integrity: sha512-TsecNzxiO5bLfzqb4OOuzfUmdOROcssuGqgh5rXMMaasoFZ3GoveUgdY1wcf17frMJM7kCNGNuK34EjErneZkg==}
+  /@solid-primitives/utils@6.2.2(solid-js@1.8.15):
+    resolution: {integrity: sha512-11ypVbp987XxETeRqY5Y3OmmTpm8/jZqJXRvo6AyqBthzkvvjEdReuUMU2yVb+pwWGxfZpWHZ6EUCcGXUMhfwg==}
     peerDependencies:
       solid-js: ^1.6.12
     dependencies:
