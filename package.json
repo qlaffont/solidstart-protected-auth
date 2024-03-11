@@ -70,7 +70,7 @@
     "np": "10.0.0",
     "prettier": "3.2.5",
     "regenerator-runtime": "0.14.1",
-    "size-limit": "11.0.2",
+    "size-limit": "11.0.3",
     "solid-js": "^1.8.3",
     "solid-testing-library": "^0.5.1",
     "tsdx": "0.14.1",
