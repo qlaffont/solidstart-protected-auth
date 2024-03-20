@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 2.0.302 (2024-03-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency solid-start to v0.3.11 ([b6e9a04](https://github.com/qlaffont/solidstarter-protected-auth/commit/b6e9a04bab7ff6cd3ccd973d300d146537b8df25))
+
 ### 2.0.301 (2024-03-20)
 
 ### 2.0.300 (2024-03-20)
