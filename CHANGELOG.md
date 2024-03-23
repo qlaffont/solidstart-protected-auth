@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 2.0.306 (2024-03-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @solid-primitives/storage to v3 ([964c28b](https://github.com/qlaffont/solidstarter-protected-auth/commit/964c28bdd3e3d138b2e014d747971f02d3b6560c))
+
 ### 2.0.305 (2024-03-22)
 
 ### 2.0.304 (2024-03-22)
