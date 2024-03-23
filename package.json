@@ -80,7 +80,7 @@
     "vitest": "^1.0.0"
   },
   "dependencies": {
-    "@solid-primitives/storage": "^2.1.1",
+    "@solid-primitives/storage": "^3.0.0",
     "solid-start": "^0.3.7"
   }
 }
