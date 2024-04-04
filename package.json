@@ -76,7 +76,7 @@
     "tsdx": "0.14.1",
     "tslib": "2.6.2",
     "tsup": "^8.0.0",
-    "typescript": "5.4.3",
+    "typescript": "5.4.4",
     "vitest": "^1.0.0"
   },
   "dependencies": {
