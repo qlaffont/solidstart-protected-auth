@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@solid-primitives/storage':
         specifier: ^3.0.0
-        version: 3.5.0(solid-js@1.8.17)(solid-start@0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.10(@types/node@17.0.21)(terser@5.29.2)))
+        version: 3.5.0(solid-js@1.8.17)(solid-start@0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.11(@types/node@17.0.21)(terser@5.29.2)))
       solid-start:
         specifier: ^0.3.7
-        version: 0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.10(@types/node@17.0.21)(terser@5.29.2))
+        version: 0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.11(@types/node@17.0.21)(terser@5.29.2))
     devDependencies:
       '@babel/core':
         specifier: ^7.22.5
@@ -38,7 +38,7 @@ importers:
         version: 7.8.0(eslint@8.57.0)(typescript@5.4.5)
       '@vitest/coverage-istanbul':
         specifier: ^1.0.0
-        version: 1.5.3(vitest@1.5.3(@types/node@17.0.21)(jsdom@24.0.0)(terser@5.29.2))
+        version: 1.6.0(vitest@1.6.0(@types/node@17.0.21)(jsdom@24.0.0)(terser@5.29.2))
       babel-preset-solid:
         specifier: ^1.8.2
         version: 1.8.17(@babel/core@7.24.5)
@@ -95,7 +95,7 @@ importers:
         version: 5.4.5
       vitest:
         specifier: ^1.0.0
-        version: 1.5.3(@types/node@17.0.21)(jsdom@24.0.0)(terser@5.29.2)
+        version: 1.6.0(@types/node@17.0.21)(jsdom@24.0.0)(terser@5.29.2)
 
 packages:
 
@@ -1828,25 +1828,25 @@ packages:
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-  '@vitest/coverage-istanbul@1.5.3':
-    resolution: {integrity: sha512-mZrrqe5cgZJ5MsewF68xBwfPCeWPAoUn5HfZDIL1msv+EIJ/ifqF9aeZ/Q4kErtHS9RTBdCmkNC2dlx0F5lEKw==}
+  '@vitest/coverage-istanbul@1.6.0':
+    resolution: {integrity: sha512-h/BwpXehkkS0qsNCS00QxiupAqVkNi0WT19BR0dQvlge5oHghoSVLx63fABYFoKxVb7Ue7+k6V2KokmQ1zdMpg==}
     peerDependencies:
-      vitest: 1.5.3
+      vitest: 1.6.0
 
-  '@vitest/expect@1.5.3':
-    resolution: {integrity: sha512-y+waPz31pOFr3rD7vWTbwiLe5+MgsMm40jTZbQE8p8/qXyBX3CQsIXRx9XK12IbY7q/t5a5aM/ckt33b4PxK2g==}
+  '@vitest/expect@1.6.0':
+    resolution: {integrity: sha512-ixEvFVQjycy/oNgHjqsL6AZCDduC+tflRluaHIzKIsdbzkLn2U/iBnVeJwB6HsIjQBdfMR8Z0tRxKUsvFJEeWQ==}
 
-  '@vitest/runner@1.5.3':
-    resolution: {integrity: sha512-7PlfuReN8692IKQIdCxwir1AOaP5THfNkp0Uc4BKr2na+9lALNit7ub9l3/R7MP8aV61+mHKRGiqEKRIwu6iiQ==}
+  '@vitest/runner@1.6.0':
+    resolution: {integrity: sha512-P4xgwPjwesuBiHisAVz/LSSZtDjOTPYZVmNAnpHHSR6ONrf8eCJOFRvUwdHn30F5M1fxhqtl7QZQUk2dprIXAg==}
 
-  '@vitest/snapshot@1.5.3':
-    resolution: {integrity: sha512-K3mvIsjyKYBhNIDujMD2gfQEzddLe51nNOAf45yKRt/QFJcUIeTQd2trRvv6M6oCBHNVnZwFWbQ4yj96ibiDsA==}
+  '@vitest/snapshot@1.6.0':
+    resolution: {integrity: sha512-+Hx43f8Chus+DCmygqqfetcAZrDJwvTj0ymqjQq4CvmpKFSTVteEOBzCusu1x2tt4OJcvBflyHUE0DZSLgEMtQ==}
 
-  '@vitest/spy@1.5.3':
-    resolution: {integrity: sha512-Llj7Jgs6lbnL55WoshJUUacdJfjU2honvGcAJBxhra5TPEzTJH8ZuhI3p/JwqqfnTr4PmP7nDmOXP53MS7GJlg==}
+  '@vitest/spy@1.6.0':
+    resolution: {integrity: sha512-leUTap6B/cqi/bQkXUu6bQV5TZPx7pmMBKBQiI0rJA8c3pB56ZsaTbREnF7CJfmvAS4V2cXIBAh/3rVwrrCYgw==}
 
-  '@vitest/utils@1.5.3':
-    resolution: {integrity: sha512-rE9DTN1BRhzkzqNQO+kw8ZgfeEBCLXiHJwetk668shmNBpSagQxneT5eSqEBLP+cqSiAeecvQmbpFfdMyLcIQA==}
+  '@vitest/utils@1.6.0':
+    resolution: {integrity: sha512-21cPiuGMoMZwiOHa2i4LXkMkMkCGzA+MVFV70jRwHo95dL4x/ts5GZhML1QWuy7yfp3WzK3lRvZi3JnXTYqrBw==}
 
   abab@2.0.6:
     resolution: {integrity: sha512-j2afSsaIENvHZN2B8GOpF566vZ5WVk5opAiMTvWgaQT8DkbOqsTfvNAvHoRGU2zzP8cPoqys+xHTRDWW8L+/BA==}
@@ -4470,8 +4470,8 @@ packages:
     resolution: {integrity: sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==}
     hasBin: true
 
-  mlly@1.6.1:
-    resolution: {integrity: sha512-vLgaHvaeunuOXHSmEbZ9izxPx3USsk8KCQ8iC+aTlp5sKRSoZvwhHh5L9VbKSaVC6sJDqbyohIS76E2VmHIPAA==}
+  mlly@1.7.0:
+    resolution: {integrity: sha512-U9SDaXGEREBYQgfejV97coK0UL1r+qnF2SyO9A3qcI8MzKnsIFKHNVEkrDyNncQTKQQumsasmeq84eNMdBfsNQ==}
 
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
@@ -6087,8 +6087,8 @@ packages:
     resolution: {integrity: sha512-ZZKSmDAEFOijERBLkmYfJ+vmk3w+7hOLYDNkRCuRuMJGEmqYNCNLyBBFwWKVMhfwaEF3WOd0Zlw86U/WC/+nYw==}
     engines: {'0': node >=0.6.0}
 
-  vite-node@1.5.3:
-    resolution: {integrity: sha512-axFo00qiCpU/JLd8N1gu9iEYL3xTbMbMrbe5nDp9GL0nb6gurIdZLkkFogZXWnE8Oyy5kfSLwNVIcVsnhE7lgQ==}
+  vite-node@1.6.0:
+    resolution: {integrity: sha512-de6HJgzC+TFzOu0NTC4RAIsyf/DY/ibWDYQUcuEA84EMHhcefTUGkjFHKKEJhQN4A+6I0u++kr3l36ZF2d7XRw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
 
@@ -6112,8 +6112,8 @@ packages:
       '@testing-library/jest-dom':
         optional: true
 
-  vite@5.2.10:
-    resolution: {integrity: sha512-PAzgUZbP7msvQvqdSD+ErD5qGnSFiGOoWmV5yAKUEI0kdhjbH6nMWVyZQC/hSc4aXwc0oJ9aEdIiF9Oje0JFCw==}
+  vite@5.2.11:
+    resolution: {integrity: sha512-HndV31LWW05i1BLPMUCE1B9E9GFbOu1MbenhS58FuK6owSO5qHm7GiCotrNY1YE5rMeQSFBGmT5ZaLEjFizgiQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -6148,15 +6148,15 @@ packages:
       vite:
         optional: true
 
-  vitest@1.5.3:
-    resolution: {integrity: sha512-2oM7nLXylw3mQlW6GXnRriw+7YvZFk/YNV8AxIC3Z3MfFbuziLGWP9GPxxu/7nRlXhqyxBikpamr+lEEj1sUEw==}
+  vitest@1.6.0:
+    resolution: {integrity: sha512-H5r/dN06swuFnzNFhq/dnz37bPXnq8xB2xB5JOVk8K09rUtoeNN+LHWkoQ0A/i3hvbUKKcCei9KpbxqHMLhLLA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
       '@edge-runtime/vm': '*'
       '@types/node': ^18.0.0 || >=20.0.0
-      '@vitest/browser': 1.5.3
-      '@vitest/ui': 1.5.3
+      '@vitest/browser': 1.6.0
+      '@vitest/ui': 1.6.0
       happy-dom: '*'
       jsdom: '*'
     peerDependenciesMeta:
@@ -7892,12 +7892,12 @@ snapshots:
       '@size-limit/file': 11.1.2(size-limit@11.1.2)
       size-limit: 11.1.2
 
-  '@solid-primitives/storage@3.5.0(solid-js@1.8.17)(solid-start@0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.10(@types/node@17.0.21)(terser@5.29.2)))':
+  '@solid-primitives/storage@3.5.0(solid-js@1.8.17)(solid-start@0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.11(@types/node@17.0.21)(terser@5.29.2)))':
     dependencies:
       '@solid-primitives/utils': 6.2.3(solid-js@1.8.17)
       solid-js: 1.8.17
     optionalDependencies:
-      solid-start: 0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.10(@types/node@17.0.21)(terser@5.29.2))
+      solid-start: 0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.11(@types/node@17.0.21)(terser@5.29.2))
 
   '@solid-primitives/utils@6.2.3(solid-js@1.8.17)':
     dependencies:
@@ -8163,7 +8163,7 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitest/coverage-istanbul@1.5.3(vitest@1.5.3(@types/node@17.0.21)(jsdom@24.0.0)(terser@5.29.2))':
+  '@vitest/coverage-istanbul@1.6.0(vitest@1.6.0(@types/node@17.0.21)(jsdom@24.0.0)(terser@5.29.2))':
     dependencies:
       debug: 4.3.4
       istanbul-lib-coverage: 3.2.2
@@ -8174,33 +8174,33 @@ snapshots:
       magicast: 0.3.4
       picocolors: 1.0.0
       test-exclude: 6.0.0
-      vitest: 1.5.3(@types/node@17.0.21)(jsdom@24.0.0)(terser@5.29.2)
+      vitest: 1.6.0(@types/node@17.0.21)(jsdom@24.0.0)(terser@5.29.2)
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/expect@1.5.3':
+  '@vitest/expect@1.6.0':
     dependencies:
-      '@vitest/spy': 1.5.3
-      '@vitest/utils': 1.5.3
+      '@vitest/spy': 1.6.0
+      '@vitest/utils': 1.6.0
       chai: 4.4.1
 
-  '@vitest/runner@1.5.3':
+  '@vitest/runner@1.6.0':
     dependencies:
-      '@vitest/utils': 1.5.3
+      '@vitest/utils': 1.6.0
       p-limit: 5.0.0
       pathe: 1.1.2
 
-  '@vitest/snapshot@1.5.3':
+  '@vitest/snapshot@1.6.0':
     dependencies:
       magic-string: 0.30.10
       pathe: 1.1.2
       pretty-format: 29.7.0
 
-  '@vitest/spy@1.5.3':
+  '@vitest/spy@1.6.0':
     dependencies:
       tinyspy: 2.2.1
 
-  '@vitest/utils@1.5.3':
+  '@vitest/utils@1.6.0':
     dependencies:
       diff-sequences: 29.6.3
       estree-walker: 3.0.3
@@ -11231,7 +11231,7 @@ snapshots:
 
   local-pkg@0.5.0:
     dependencies:
-      mlly: 1.6.1
+      mlly: 1.7.0
       pkg-types: 1.1.0
 
   locate-path@5.0.0:
@@ -11418,7 +11418,7 @@ snapshots:
     dependencies:
       minimist: 1.2.8
 
-  mlly@1.6.1:
+  mlly@1.7.0:
     dependencies:
       acorn: 8.11.3
       pathe: 1.1.2
@@ -11879,7 +11879,7 @@ snapshots:
   pkg-types@1.1.0:
     dependencies:
       confbox: 0.1.7
-      mlly: 1.6.1
+      mlly: 1.7.0
       pathe: 1.1.2
 
   pn@1.1.0: {}
@@ -12508,7 +12508,7 @@ snapshots:
       '@babel/types': 7.24.5
       solid-js: 1.8.17
 
-  solid-start@0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.10(@types/node@17.0.21)(terser@5.29.2)):
+  solid-start@0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.11(@types/node@17.0.21)(terser@5.29.2)):
     dependencies:
       '@babel/core': 7.24.5
       '@babel/generator': 7.24.1
@@ -12542,9 +12542,9 @@ snapshots:
       solid-js: 1.8.17
       terser: 5.29.2
       undici: 5.28.3
-      vite: 5.2.10(@types/node@17.0.21)(terser@5.29.2)
-      vite-plugin-inspect: 0.7.42(rollup@3.29.4)(vite@5.2.10(@types/node@17.0.21)(terser@5.29.2))
-      vite-plugin-solid: 2.10.2(solid-js@1.8.17)(vite@5.2.10(@types/node@17.0.21)(terser@5.29.2))
+      vite: 5.2.11(@types/node@17.0.21)(terser@5.29.2)
+      vite-plugin-inspect: 0.7.42(rollup@3.29.4)(vite@5.2.11(@types/node@17.0.21)(terser@5.29.2))
+      vite-plugin-solid: 2.10.2(solid-js@1.8.17)(vite@5.2.11(@types/node@17.0.21)(terser@5.29.2))
       wait-on: 6.0.1(debug@4.3.4)
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -13228,13 +13228,13 @@ snapshots:
       core-util-is: 1.0.2
       extsprintf: 1.3.0
 
-  vite-node@1.5.3(@types/node@17.0.21)(terser@5.29.2):
+  vite-node@1.6.0(@types/node@17.0.21)(terser@5.29.2):
     dependencies:
       cac: 6.7.14
       debug: 4.3.4
       pathe: 1.1.2
       picocolors: 1.0.0
-      vite: 5.2.10(@types/node@17.0.21)(terser@5.29.2)
+      vite: 5.2.11(@types/node@17.0.21)(terser@5.29.2)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -13245,7 +13245,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-inspect@0.7.42(rollup@3.29.4)(vite@5.2.10(@types/node@17.0.21)(terser@5.29.2)):
+  vite-plugin-inspect@0.7.42(rollup@3.29.4)(vite@5.2.11(@types/node@17.0.21)(terser@5.29.2)):
     dependencies:
       '@antfu/utils': 0.7.7
       '@rollup/pluginutils': 5.1.0(rollup@3.29.4)
@@ -13255,12 +13255,12 @@ snapshots:
       open: 9.1.0
       picocolors: 1.0.0
       sirv: 2.0.4
-      vite: 5.2.10(@types/node@17.0.21)(terser@5.29.2)
+      vite: 5.2.11(@types/node@17.0.21)(terser@5.29.2)
     transitivePeerDependencies:
       - rollup
       - supports-color
 
-  vite-plugin-solid@2.10.2(solid-js@1.8.17)(vite@5.2.10(@types/node@17.0.21)(terser@5.29.2)):
+  vite-plugin-solid@2.10.2(solid-js@1.8.17)(vite@5.2.11(@types/node@17.0.21)(terser@5.29.2)):
     dependencies:
       '@babel/core': 7.24.5
       '@types/babel__core': 7.20.5
@@ -13268,12 +13268,12 @@ snapshots:
       merge-anything: 5.1.7
       solid-js: 1.8.17
       solid-refresh: 0.6.3(solid-js@1.8.17)
-      vite: 5.2.10(@types/node@17.0.21)(terser@5.29.2)
-      vitefu: 0.2.5(vite@5.2.10(@types/node@17.0.21)(terser@5.29.2))
+      vite: 5.2.11(@types/node@17.0.21)(terser@5.29.2)
+      vitefu: 0.2.5(vite@5.2.11(@types/node@17.0.21)(terser@5.29.2))
     transitivePeerDependencies:
       - supports-color
 
-  vite@5.2.10(@types/node@17.0.21)(terser@5.29.2):
+  vite@5.2.11(@types/node@17.0.21)(terser@5.29.2):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
@@ -13283,17 +13283,17 @@ snapshots:
       fsevents: 2.3.3
       terser: 5.29.2
 
-  vitefu@0.2.5(vite@5.2.10(@types/node@17.0.21)(terser@5.29.2)):
+  vitefu@0.2.5(vite@5.2.11(@types/node@17.0.21)(terser@5.29.2)):
     optionalDependencies:
-      vite: 5.2.10(@types/node@17.0.21)(terser@5.29.2)
+      vite: 5.2.11(@types/node@17.0.21)(terser@5.29.2)
 
-  vitest@1.5.3(@types/node@17.0.21)(jsdom@24.0.0)(terser@5.29.2):
+  vitest@1.6.0(@types/node@17.0.21)(jsdom@24.0.0)(terser@5.29.2):
     dependencies:
-      '@vitest/expect': 1.5.3
-      '@vitest/runner': 1.5.3
-      '@vitest/snapshot': 1.5.3
-      '@vitest/spy': 1.5.3
-      '@vitest/utils': 1.5.3
+      '@vitest/expect': 1.6.0
+      '@vitest/runner': 1.6.0
+      '@vitest/snapshot': 1.6.0
+      '@vitest/spy': 1.6.0
+      '@vitest/utils': 1.6.0
       acorn-walk: 8.3.2
       chai: 4.4.1
       debug: 4.3.4
@@ -13306,8 +13306,8 @@ snapshots:
       strip-literal: 2.1.0
       tinybench: 2.8.0
       tinypool: 0.8.4
-      vite: 5.2.10(@types/node@17.0.21)(terser@5.29.2)
-      vite-node: 1.5.3(@types/node@17.0.21)(terser@5.29.2)
+      vite: 5.2.11(@types/node@17.0.21)(terser@5.29.2)
+      vite-node: 1.6.0(@types/node@17.0.21)(terser@5.29.2)
       why-is-node-running: 2.2.2
     optionalDependencies:
       '@types/node': 17.0.21
