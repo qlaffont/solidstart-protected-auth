@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@solid-primitives/storage':
         specifier: ^3.0.0
-        version: 3.7.0(solid-js@1.8.17)(solid-start@0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.11(terser@5.29.2)))
+        version: 3.7.1(solid-js@1.8.17)(solid-start@0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.11(terser@5.29.2)))
       solid-start:
         specifier: ^0.3.7
         version: 0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.11(terser@5.29.2))
@@ -1669,8 +1669,8 @@ packages:
     peerDependencies:
       size-limit: 11.1.4
 
-  '@solid-primitives/storage@3.7.0':
-    resolution: {integrity: sha512-BPQeD0+x3SU+5fBQSkEIaaV2oSP8yubtVRPNbyDhoZ3MWivoizI3/fI1YRei3JVULXi6D5RRyq8CnZ5umUC/KQ==}
+  '@solid-primitives/storage@3.7.1':
+    resolution: {integrity: sha512-tAmZKQg44RjDjrtWO/5hCOrktQspn/yVV0ySb7yKr7B3CVQlTQtldw3W8UetytJSD9podb9cplvvkq75fgpB1Q==}
     peerDependencies:
       '@tauri-apps/plugin-store': '*'
       solid-js: ^1.6.12
@@ -8060,7 +8060,7 @@ snapshots:
       '@size-limit/file': 11.1.4(size-limit@11.1.4)
       size-limit: 11.1.4
 
-  '@solid-primitives/storage@3.7.0(solid-js@1.8.17)(solid-start@0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.11(terser@5.29.2)))':
+  '@solid-primitives/storage@3.7.1(solid-js@1.8.17)(solid-start@0.3.11(@solidjs/meta@0.29.3(solid-js@1.8.17))(solid-js@1.8.17)(vite@5.2.11(terser@5.29.2)))':
     dependencies:
       '@solid-primitives/utils': 6.2.3(solid-js@1.8.17)
       solid-js: 1.8.17
