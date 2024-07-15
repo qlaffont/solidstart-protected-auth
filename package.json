@@ -40,21 +40,10 @@
   "name": "solidstart-protected-auth",
   "author": "qlaffont",
   "module": "dist/solidstart-protected-auth.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/solidstart-protected-auth.cjs.production.min.js",
-      "limit": "300 KB"
-    },
-    {
-      "path": "dist/solidstart-protected-auth.esm.js",
-      "limit": "200 KB"
-    }
-  ],
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.23.2",
     "@babel/preset-typescript": "^7.23.2",
-    "@size-limit/preset-small-lib": "11.1.4",
     "@solidjs/testing-library": "^0.8.4",
     "@typescript-eslint/eslint-plugin": "7.16.0",
     "@typescript-eslint/parser": "7.16.0",
@@ -70,10 +59,8 @@
     "np": "10.0.6",
     "prettier": "3.3.3",
     "regenerator-runtime": "0.14.1",
-    "size-limit": "11.1.4",
     "solid-js": "^1.8.3",
     "solid-testing-library": "^0.5.1",
-    "tsdx": "0.14.1",
     "tslib": "2.6.3",
     "tsup": "^8.0.0",
     "typescript": "5.5.3",
