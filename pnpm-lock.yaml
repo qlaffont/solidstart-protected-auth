@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^24.0.0
     version: 24.1.1
   np:
-    specifier: 10.0.6
-    version: 10.0.6(typescript@5.5.3)
+    specifier: 10.0.7
+    version: 10.0.7(typescript@5.5.3)
   prettier:
     specifier: 3.3.3
     version: 3.3.3
@@ -5839,8 +5839,8 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
-  /np@10.0.6(typescript@5.5.3):
-    resolution: {integrity: sha512-173uUvFDmHtme1ra3JDMjYzqa94XHJAHoNae6lCA4mJWMIz073x9FE2O8SHMMjKXlHetRdOXufLUjdimRxXR3A==}
+  /np@10.0.7(typescript@5.5.3):
+    resolution: {integrity: sha512-vIPKQwOYKpQU40PU5x/vLfN2haj8ObxMvR1QGt7EZnBPWdm4WEbHdumYAnMV7AeR9kACsMqcqAP37sAo5cW5jA==}
     engines: {git: '>=2.11.0', node: '>=18', npm: '>=9', pnpm: '>=8', yarn: '>=1.7.0'}
     hasBin: true
     dependencies:
