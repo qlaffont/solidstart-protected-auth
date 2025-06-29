@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@solid-primitives/storage':
         specifier: ^4.0.0
-        version: 4.3.2(solid-js@1.9.7)(solid-start@0.3.11(@solidjs/meta@0.29.4(solid-js@1.9.7))(solid-js@1.9.7)(vite@6.3.5(@types/node@22.10.10)(terser@5.31.3)))
+        version: 4.3.3(solid-js@1.9.7)(solid-start@0.3.11(@solidjs/meta@0.29.4(solid-js@1.9.7))(solid-js@1.9.7)(vite@6.3.5(@types/node@22.10.10)(terser@5.31.3)))
       solid-start:
         specifier: ^0.3.7
         version: 0.3.11(@solidjs/meta@0.29.4(solid-js@1.9.7))(solid-js@1.9.7)(vite@6.3.5(@types/node@22.10.10)(terser@5.31.3))
@@ -1514,8 +1514,8 @@ packages:
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
 
-  '@solid-primitives/storage@4.3.2':
-    resolution: {integrity: sha512-Vkuk/AqgUOjz6k7Mo5yDFQBQg8KMQcZfaac/bxLApaza3e5c/iNllNvxZWPM9Vf+Gf4m5SgRbvgsm6dSLJ27Jw==}
+  '@solid-primitives/storage@4.3.3':
+    resolution: {integrity: sha512-ACbNwMZ1s8VAvld6EUXkDkX/US3IhtlPLxg6+B2s9MwNUugwdd51I98LPEaHrdLpqPmyzqgoJe0TxEFlf3Dqrw==}
     peerDependencies:
       '@tauri-apps/plugin-store': '*'
       solid-js: ^1.6.12
@@ -1526,8 +1526,8 @@ packages:
       solid-start:
         optional: true
 
-  '@solid-primitives/utils@6.3.1':
-    resolution: {integrity: sha512-4/Z59nnwu4MPR//zWZmZm2yftx24jMqQ8CSd/JobL26TPfbn4Ph8GKNVJfGJWShg1QB98qObJSskqizbTvcLLA==}
+  '@solid-primitives/utils@6.3.2':
+    resolution: {integrity: sha512-hZ/M/qr25QOCcwDPOHtGjxTD8w2mNyVAYvcfgwzBHq2RwNqHNdDNsMZYap20+ruRwW4A3Cdkczyoz0TSxLCAPQ==}
     peerDependencies:
       solid-js: ^1.6.12
 
@@ -6005,14 +6005,14 @@ snapshots:
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
-  '@solid-primitives/storage@4.3.2(solid-js@1.9.7)(solid-start@0.3.11(@solidjs/meta@0.29.4(solid-js@1.9.7))(solid-js@1.9.7)(vite@6.3.5(@types/node@22.10.10)(terser@5.31.3)))':
+  '@solid-primitives/storage@4.3.3(solid-js@1.9.7)(solid-start@0.3.11(@solidjs/meta@0.29.4(solid-js@1.9.7))(solid-js@1.9.7)(vite@6.3.5(@types/node@22.10.10)(terser@5.31.3)))':
     dependencies:
-      '@solid-primitives/utils': 6.3.1(solid-js@1.9.7)
+      '@solid-primitives/utils': 6.3.2(solid-js@1.9.7)
       solid-js: 1.9.7
     optionalDependencies:
       solid-start: 0.3.11(@solidjs/meta@0.29.4(solid-js@1.9.7))(solid-js@1.9.7)(vite@6.3.5(@types/node@22.10.10)(terser@5.31.3))
 
-  '@solid-primitives/utils@6.3.1(solid-js@1.9.7)':
+  '@solid-primitives/utils@6.3.2(solid-js@1.9.7)':
     dependencies:
       solid-js: 1.9.7
 
